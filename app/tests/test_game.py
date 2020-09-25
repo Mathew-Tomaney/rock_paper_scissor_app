@@ -19,10 +19,10 @@ class GameTest(unittest.TestCase):
 
 
     def test_game_can_play__player_1_win(self):
-        self.assertEqual("Rick is the winner with 1!", self.game_2.play())
+        self.assertEqual("Rick is the winner with Rock!", self.game_2.play())
     
     def test_game_can_play__player_2_win(self):
-        self.assertEqual("Pippin is the winner with 2!", self.game_4.play())
+        self.assertEqual("Pippin is the winner with Paper!", self.game_4.play())
     
     def test_game_can_play__tied_game(self):
         self.assertEqual("It's a draw!", self.game_3.play())
