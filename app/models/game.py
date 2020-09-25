@@ -6,9 +6,8 @@ class Game:
 
 
     def play(self):
-        diff = self.player_1.choice - self.player_2.choice
-        diff += 5
-        result = diff % 3
+        result = ((self.player_1.choice - self.player_2.choice) + 5 ) % 3 
+        
         if result == 0:
             return f"{self.player_1.name} is the winner with {self.player_1.choice}!"
         elif result == 1:
