@@ -5,10 +5,10 @@ from app.models.player import Player
 class GameTest(unittest.TestCase):
     
     def setUp(self):
-        self.game_1 = Game(Player("Hal", 1), Player("Dave", 3))
-        self.game_2 = Game(Player("Rick", 1), Player("Morty", 3))
-        self.game_3 = Game(Player("Bill", 2), Player("Ted", 2))
-        self.game_4 = Game(Player("Merry", 1), Player("Pippin", 2))
+        self.game_1 = Game(Player("Hal", "Rock"), Player("Dave", "Scissors"))
+        self.game_2 = Game(Player("Rick", "Rock"), Player("Morty", "Scissors"))
+        self.game_3 = Game(Player("Bill", "Paper"), Player("Ted", "Paper"))
+        self.game_4 = Game(Player("Merry", "Rock"), Player("Pippin", "Paper"))
 
 
     def test_game_has_player_1(self):
