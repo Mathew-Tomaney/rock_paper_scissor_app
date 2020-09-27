@@ -1,0 +1,23 @@
+
+
+header > image {
+    width: 100px;
+    height: 50px;
+    /* grid-area: image; */
+    
+}
+
+header > h1 {
+    /* grid-area: title; */
+}
+
+header > nav {
+    /* grid-area: links; */
+}
+
+/* header {
+    display: grid;
+    grid-template-areas:
+    'image title links';
+    grid-template-columns: 3fr, 3fr, 4fr;
+} */
