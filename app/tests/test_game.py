@@ -9,6 +9,7 @@ class GameTest(unittest.TestCase):
         self.game_2 = Game(Player("Rick", "Rock"), Player("Morty", "Scissors"))
         self.game_3 = Game(Player("Bill", "Paper"), Player("Ted", "Paper"))
         self.game_4 = Game(Player("Merry", "Rock"), Player("Pippin", "Paper"))
+        self.game_5 = Game(Player("Bob", "Rock"), )
 
 
     def test_game_has_player_1(self):
@@ -35,4 +36,5 @@ class GameTest(unittest.TestCase):
         self.game_3.play()
         self.assertEqual("It's a draw!", self.game_3.show_results())
 
-    
+    def test_game_gets_computer_player(self):
+        self.assertEqual("Computer", self.game_5.player_2.name)

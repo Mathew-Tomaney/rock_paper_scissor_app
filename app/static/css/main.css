@@ -25,8 +25,9 @@ body > header {
 .main_nav > li > a {
     color: black;
     text-decoration: none;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px
 }
 
 body > footer {
@@ -34,4 +35,22 @@ body > footer {
     justify-content: space-between;
     background-color: gold;
     padding-top: 30px;
+}
+
+#rules {
+    width: 25%;
+}
+
+#rules_section {
+    display: flex;
+}
+
+#rules_section > p {
+    font-size: 25px;
+}
+
+#results {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
 }

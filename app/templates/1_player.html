@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Coming Soon!</h1>
+<h2>Enter your name and your choice of Rock, Paper or Scissors in the spaces below.</h2>
+<form action="/solo_play" method="post">
+    <label for="player_1">Enter your name</label>
+    <input type="text" name="player_1" id="player_1">
+
+    <label for="choice_1">Enter your choice</label>
+    <input type="text" name="choice_1" id="choice_1">
+</form>
 {% endblock %}

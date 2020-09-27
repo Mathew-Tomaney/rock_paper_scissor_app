@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <h2>The rules</h2>
-<img src="{{url_for('static', filename='images/rules.png')}}" alt="image showing rock beats scissors, scissors beats paper, paper beats rock - a simple circle">
+<div id=rules_section>
 
-<p>It's as easy as that; just choose which type of game you want to play from the menu, then have fun!</p>
+    <img id="rules" src="{{url_for('static', filename='images/rules.png')}}" alt="image showing rock beats scissors, scissors beats paper, paper beats rock - a simple circle">
 
+    <p>It's as easy as that; just choose which type of game you want to play from the menu, then have fun!</p>
+</div>
 {% endblock %}

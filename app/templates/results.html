@@ -2,9 +2,10 @@
 
 {% block content %}
 
-    <h2>Results!</h2>
+    <h2>Results:</h2>
 
-    {{ game_result }}
+    <div id=results>
+        {{ game_result }}
 
         {% if winning_player.input_choice == "Rock" %}
         <img src="{{url_for('static', filename='images/clobberin.gif')}}" alt="Marvel comicbook rock-monster character 'Thing'">
@@ -17,6 +18,9 @@
         
         {% endif %}
 
-    <p>Game over!</p>
+    </div>
+    <br>
+    <h4>Game over! Use the menu to play again.</h4>
+
 
 {% endblock %}
