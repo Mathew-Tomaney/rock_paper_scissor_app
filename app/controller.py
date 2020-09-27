@@ -33,4 +33,13 @@ def play():
     
     return render_template("results.html", title="Results", winning_player= winning_player, game_result= result)
 
+@app.route('/solo_play', methods=['POST'])
+def solo_play():
+    player_1 = request.form['player_1']
+    choice_1 = request.form['choice_1']
 
+    game = Game(Player(player_1, choice_1), )
+    winning_player = game.play()
+    result = game.show_results()
+
+    return render_template("results.html", title="Results", winning_player= winning_player, game_result= result)
