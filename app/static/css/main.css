@@ -1,23 +1,16 @@
 
-
-header > image {
-    width: 100px;
-    height: 50px;
-    /* grid-area: image; */
-    
+body > header {
+    display: flex;
 }
 
-header > h1 {
-    /* grid-area: title; */
+#logo {
+    flex: 20%;
 }
 
-header > nav {
-    /* grid-area: links; */
+body > header > nav {
+    flex: 40%
 }
 
-/* header {
-    display: grid;
-    grid-template-areas:
-    'image title links';
-    grid-template-columns: 3fr, 3fr, 4fr;
-} */
+body > header > h1 {
+    flex: 40%
+}
