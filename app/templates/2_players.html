@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Enter your name and your choice of Rock, Paper or Scissors in the spaces below. No peeking at your opponent's choice!</h1>
+        
+        <form action="/play" method="post">
+            <label for="player_1">Player 1 name</label>
+            <input type="text" name="player_1" id="player_1">
+
+            <label for="choice_1">Player 1 choice</label>
+            <input type="text" name="choice_1" id="choice_1">
+
+            <label for="player_2">Player 2 name</label>
+            <input type="text" name="player_2" id="player_2">
+
+            <label for="choice_2">Player 2 choice</label>
+            <input type="text" name="choice_2" id="choice_2">
+
+            <input type="submit">
+
+        </form>
+        
+{% endblock %}

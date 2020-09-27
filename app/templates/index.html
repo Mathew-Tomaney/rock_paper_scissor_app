@@ -1,58 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> {{ title }} </title>
-</head>
-<body>
-    <header>
-        <img src="https://miro.medium.com/max/1000/1*JOvf8IhmSCqaT7guHfw3BQ.jpeg" alt="rock paper scissors symbols">
-        <h1>Let's play Rock Paper Scissors!</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Rules</a>
-                </li>
-                <li>
-                    <a href="/two_players">2-Player Game</a>
-                </li>
-                <li>
-                    <a href="/one_player">1-Player Game</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>The rules</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png" alt="Rock beats scissors, scissors beats paper, paper beats rock. Make your selections and see who wins!">
-        
-        <form action="/play" method="post">
-            <label for="player_1">Player 1 name</label>
-            <input type="text" name="player_1" id="player_1">
+{% extends "base.html" %}
 
-            <label for="choice_1">Player 1 choice</label>
-            <input type="text" name="choice_1" id="choice_1">
+{% block content %}
 
-            <label for="player_2">Player 2 name</label>
-            <input type="text" name="player_2" id="player_2">
+<h1>Welcome to Rock Paper Scissors!</h1>
+<p>Use the menu to choose a game type, or to learn the rules.
 
-            <label for="choice_2">Player 2 choice</label>
-            <input type="text" name="choice_2" id="choice_2">
+    Thanks for visiting!
 
-            <input type="submit">
+    love Mat x
+</p>
 
-        </form>
-        
-        {{ game_result }}
-
-    </main>
-    <footer>
-        <h3>Thanks for playing!</h3>
-        <nav>
-            <a href="/">Play again?</a>
-        </nav>
-    </footer>
-    
-</body>
-</html>
+{% endblock %}
