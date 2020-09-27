@@ -11,9 +11,6 @@ class Game:
         
         if result == 0:
             self.winning_player = self.player_1
-            return f"{self.player_1.name} is the winner with {self.player_1.input_choice}!"
         elif result == 1:
             self.winning_player = self.player_2
-            return f"{self.player_2.name} is the winner with {self.player_2.input_choice}!"
-        else:
-            return "It's a draw!"
+        return self.winning_player
