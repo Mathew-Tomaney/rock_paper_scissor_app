@@ -8,10 +8,13 @@
     </head>
     <body>
         <header>
-            <img id= "logo" src="https://miro.medium.com/max/1000/1*JOvf8IhmSCqaT7guHfw3BQ.jpeg" alt="rock paper scissors symbols">
-            <h1>Let's play!</h1>
+            <img id= "logo" src="{{url_for('static', filename='images/rps.jpg')}}" alt="rock paper scissors symbols">
+            <h1>Rock Paper Scissors</h1>
             <nav>
-                <ul>
+                <ul class= "main_nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
                     <li>
                         <a href="/rules">Rules</a>
                     </li>
@@ -25,15 +28,29 @@
             </nav>
         </header>
         <main>
-
+        <br>
         {% block content %}
         {% endblock %}
+        <br>
 
         </main>
         <footer>
-            <h3>Thanks for playing!</h3>
+            <h3>Thanks for visiting!</h3>
             <nav>
-                <a href="/">Play again?</a>
+                <ul class= "main_nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/rules">Rules</a>
+                    </li>
+                    <li>
+                        <a href="/2_players">2-Player Game</a>
+                    </li>
+                    <li>
+                        <a href="/1_player">1-Player Game</a>
+                    </li>
+                </ul>
             </nav>
         </footer>
 
