@@ -26,7 +26,10 @@ def play():
     choice_1 = request.form['choice_1']
     player_2 = request.form['player_2']
     choice_2 = request.form['choice_2']
-    result = Game(Player(player_1, choice_1), Player(player_2, choice_2)).play()
+    game = Game(Player(player_1, choice_1), Player(player_2, choice_2))
+    game.play()
+    result = game.show_results()
+    
     
     return render_template("results.html", title="Results", game_result= result)
 

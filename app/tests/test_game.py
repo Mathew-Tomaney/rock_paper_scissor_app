@@ -27,4 +27,12 @@ class GameTest(unittest.TestCase):
     def test_game_can_play__tied_game(self):
         self.assertEqual(None, self.game_3.play())
 
+    def test_show_results__winner(self):
+        self.game_1.play()
+        self.assertEqual("Hal wins by playing Rock!", self.game_1.show_results())
+
+    def test_show_results__draw(self):
+        self.game_3.play()
+        self.assertEqual("It's a draw!", self.game_3.show_results())
+
     
