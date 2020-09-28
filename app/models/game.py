@@ -8,8 +8,6 @@ class Game:
         self.player_1 = player_1
         self.player_2 = player_2 if player_2 is not None else Player("Computer", self.random)
         self.winning_player = None
-        
-
 
     def play(self):
         result = ((self.player_1.choice - self.player_2.choice) + 5 ) % 3 
