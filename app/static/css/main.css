@@ -54,6 +54,11 @@ body > footer {
     padding: 10px;
 }
 
+#rules_block > h1 {
+    font-size: 25px;
+    padding: 20px;
+}
+
 #rules {
     width: 25%;
 }
@@ -81,3 +86,4 @@ body > footer {
     padding: 20px;
     
 }
+
